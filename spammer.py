@@ -125,7 +125,7 @@ def cok():
 		except Exception as ex:exit(str(ex))
 		except (KeyboardInterrupt,EOFError):exit("[!] Exit")
 def memek():
-	print(f"{p}"+title+f"{h}\nCreated By Ramdhan Ramadhian | 16 Operators Otp{p}\n\n-Don't Use This Tool Wrong!\n-Number of Spam Multiplied by 16\n-For Example You Choose the Number of Spam as Much as 3\n-The Result is 3 times 16 the Spam will be 48\n(Disarankan Memilih Jumlah Spam 2 atau 3\nKarena Semakin banyak Jumlah Spam Semakin Lemot Spam Berjalan)\n")
+	print(f"{p}"+title+f"{h}\nCreated By Ramdhan Ramadhian | 16 Operators Otp{p}\n\n-Don't Use This Tool Wrong!\n-Number of Spam Multiplied by 16\n-For Example You Choose the Number of Spam as Much as 3\n-The Result is 3 times 16 the Spam will be 48\n(Disarankan Memilih Jumlah Spam 2 atau 3\nKarena Semakin banyak Jumlah Spam Semakin Lemot\nSpam Berjalan)\n")
 if __name__=="__main__":
 	memek()
 	cok()
