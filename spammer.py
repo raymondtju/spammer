@@ -7,7 +7,7 @@ except:
 	os.system("pip install pyfiglet")
 req=reek.Session()
 os.system('clear')
-title=pyfiglet.figlet_format("Spam Sms")
+title=pyfiglet.figlet_format("Spammer")
 p = "\33[37;1m"
 h = "\33[32;1m"
 m = "\33[31;1m"
@@ -86,38 +86,38 @@ class nyepam:
 				if "Kode OTP berhasil dikirim!" in send:continue
 				else:break
 			bingung()
-		except reek.exceptions.ReadTimeout:exit(f"{m}[!] Kesalahan Pada Koneksi")
-		except reek.exceptions.ConnectionError:exit(f"{m}[!] Kesalahan Pada Koneksi")
+		except reek.exceptions.ReadTimeout:exit(f"{m}[!] Connection Error 404")
+		except reek.exceptions.ConnectionError:exit(f"{m}[!] Connection Error 404")
 		except (KeyboardInterrupt,EOFError):exit("[!] Exit")
 __import__("os").system("clear")
 def bingung():
-	print(f"{h}\n[√] Semua Spam Terkirim Berhasil{p}\n")
-	print(f"Ingin Spam Lagi?\nKetik y untuk ya ketik t untuk tidak\n")
+	print(f"{h}\n[√] All Spam Has Been Sent Successfully{p}\n")
+	print(f"Want to Spam Again??\nType y for Yes and Type t for No\n")
 	pilih=input("y/t : ")
 	if(pilih=="y"):
 		cok()
 	elif(pilih=="t"):
-		exite("Terima Kasih!")
+		exite("Thanks You!")
 	else:
-		print("Masukan Yang Benar!")
+		print("Correct Input!")
 		bingung()
 def cok():
 	while True:
 		try:
-			a=input("[+] Nomer Korban 08×××\t: ")
+			a=input("[X] Victim Number 08×××\t: ")
 			asu=a[0:2]
-			if a in(""," "):print("[!] Jangan Kosong Ajg")
-			elif "08" not in asu:print("[!] Gunakan Nomer 08xxx\n")
-			elif len(a)<=10:print("[!] Nomer Harus Lebih Dari 10 Angka")
-			elif a=="083870396203":print("[!] Anda Tidak Bisa Spam Yang Punya Script Goblok!\n")
+			if a in(""," "):print("[!] Dont Empty")
+			elif "08" not in asu:print("[!] Use Number 08xxx\n")
+			elif len(a)<=10:print("[!] The Number to be Spam is at Least 11 Digits")
+			elif a=="083870396203":print("[!] You won't be Able to Spam the Stupid Kid Base Script Owner!\n")
 			else:
 				try:
-					suu=int(input("[+] Masukan Jumlah Spam\t: "))
+					suu=int(input("[x] Enter The Amount of Spam\t: "))
 				except:
-					print("Masukan Format Angka Jangan Huruf!")
+					print("Enter Number Format, Not Letters!")
 					cok()
 				time.sleep(2)
-				print("\n[+] Sedang Menyepam...")
+				print("\n[X] Running Spam...")
 				b=a[1:12] 
 				c="62"+b
 				nyepam(b,a,c).mulai(suu)
@@ -125,7 +125,7 @@ def cok():
 		except Exception as ex:exit(str(ex))
 		except (KeyboardInterrupt,EOFError):exit("[!] Exit")
 def memek():
-	print(f"{p}"+title+f"{h}\nFOLLOW IG @latipharkat_ | 16 Operator Otp{p}\n\nJangan Disalah Gunakan Anjg\nJumlah Spam Dikalikan Dengan 16\nContoh Jumlah Spam 2\nJadinya 2 Dikali 16 Spamnya 32\n")
+	print(f"{p}"+title+f"{o}\nCreated By Ramdhan Ramadhian | 16 Operators Otp{p}\n\nDon't Use This Tool Wrong!\nNumber of Spam Multiplied by 16\nFor Example You Choose the Number of Spam as Much as 3\nThe Result is 3 times 16 the Spam will be 48\n")
 if __name__=="__main__":
 	memek()
 	cok()
