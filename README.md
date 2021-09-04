@@ -12,5 +12,5 @@ $ pip install requests
 $ git clone https://github.com/Ramdhan7/spammer
 $ cd spammer
 $ ls
-$ python2 spammer.py
+$ python spammer.py
 ````
