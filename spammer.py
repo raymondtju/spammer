@@ -1,5 +1,5 @@
-#Udah Tinggal Pake Aja Gan:v
-#Buat Paan Recod? Belajar Bahasa Pemerograman Sana Hadeeehh Kek Kntl Lu
+#Tinggal Pake Aja Pake Ngerekode segala:v
+#Ngentod Lu ah awas ada virusnya
 import requests as reek,json,os,time,requests
 try:
 	import pyfiglet
@@ -104,7 +104,7 @@ def bingung():
 def cok():
 	while True:
 		try:
-			a=input("[X] Victim Number 08×××\t: ")
+			a=input("[x] Victim Number 08×××\t: ")
 			asu=a[0:2]
 			if a in(""," "):print("[!] Dont Empty")
 			elif "08" not in asu:print("[!] Use Number 08xxx\n")
@@ -117,7 +117,7 @@ def cok():
 					print("Enter Number Format, Not Letters!")
 					cok()
 				time.sleep(2)
-				print("\n[X] Running Spam...")
+				print("\n[x] Running Spam...")
 				b=a[1:12] 
 				c="62"+b
 				nyepam(b,a,c).mulai(suu)
