@@ -104,7 +104,7 @@ def bingung():
 def cok():
 	while True:
 		try:
-			a=input("[x] Victim Number 08×××\t: ")
+			a=input("[x] Target Number 08×××\t: ")
 			asu=a[0:2]
 			if a in(""," "):print("[!] Dont Empty")
 			elif "08" not in asu:print("[!] Use Number 08xxx\n")
